@@ -25,7 +25,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you update the value of a variable?
   Using the variable name = newValue
 - What is the difference between `null` and `undefined`?
-  Null is a nonexistent value, undefined has just not be assigned a value yet
+  Null is a intentional nonexistent value, undefined has just not be assigned a value yet
 - Why is it a good habit to include "labels" when you log values to the browser console?
   Debugging and readability
 - Give five examples of JavaScript primitives.
