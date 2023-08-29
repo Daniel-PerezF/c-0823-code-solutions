@@ -20,10 +20,16 @@ function getFirstName(person) {
   const firstName = person.firstName;
   return firstName;
 }
-console.log(getFirstName({ firstName: 'Daniel', lastName: 'Perez' }));
+console.log(
+  'First Name is:',
+  getFirstName({ firstName: 'Daniel', lastName: 'Perez' })
+);
 
 function getLastElement(array) {
   const lastIndex = array.at(-1);
   return lastIndex;
 }
-console.log(getLastElement(['propane', 'and', 'propane', 'accessories']));
+console.log(
+  'The Last Element is:',
+  getLastElement(['propane', 'and', 'propane', 'accessories'])
+);
