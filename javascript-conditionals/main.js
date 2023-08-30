@@ -95,6 +95,7 @@ function introduceWarnerBro(name) {
       return 'Goodnight everybody';
   }
 }
+console.log('Introduce warner bro:', introduceWarnerBro('yakko'));
 
 function recommendMovie(genre) {
   switch (genre) {
@@ -112,3 +113,4 @@ function recommendMovie(genre) {
       return 'interstellar';
   }
 }
+console.log('Recommend movie:', recommendMovie('action'));
