@@ -3,7 +3,7 @@ const a = 4;
 const b = 8;
 const c = 12;
 const maximumValue = Math.max(a, b, c);
-console.log('Maximum valyue:', maximumValue);
+console.log('Maximum Value:', maximumValue);
 
 const heroes = ['Spiderman', 'Batman', 'Superman', 'Doctor Strange'];
 let randomNumber = Math.random();
