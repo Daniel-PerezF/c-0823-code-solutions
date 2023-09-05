@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Give five examples of form control elements.
   Form, label, input, textarea, button
 - Give three examples of `type` attribute values for HTML `<input>` elements.
-  Type, id, name
+  text, email, password
 - Is an HTML `<input>` element a block element or an inline element?
-  Block element
+  Inline blocked element
 
 ## Notes
 
