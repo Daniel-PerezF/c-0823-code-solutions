@@ -11,7 +11,7 @@
 
       <label for="select">Why is coding cool?</label>
       <p>
-        <select id="simple" name="simple">
+        <select id="select" name="select">
           <option>Because it's interesting</option>
           <option>Because it's fun</option>
           <option>Because it's powerful</option>
@@ -26,7 +26,7 @@
         name="coding language"
         value="html"
         checked />
-      <label for="CSS">CSS</label>
+      <label for="css">CSS</label>
       <input type="radio" id="css" name="coding language" value="css" />
       <label for="javascript">JavaScript</label>
       <input
@@ -37,11 +37,15 @@
 
       <p>Would you like to sign up for more information?</p>
 
-      <input type="checkbox" id="signup" name="sign-me-up" value="sign-me-up" />
+      <input
+        type="checkbox"
+        id="sign-me-up"
+        name="sign-me-up"
+        value="sign-me-up" />
       <label for="sign-me-up">Sign me up!</label>
 
       <p><label for="comments">Comments</label></p>
-      <textarea cols="30" rows="8"></textarea>
+      <textarea cols="30" rows="8" id="comments"></textarea>
       <p><input type="submit" value="Submit" /></p>
     </form>
   </body>
