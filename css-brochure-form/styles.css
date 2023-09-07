@@ -74,3 +74,8 @@ fieldset {
 .howmany {
   margin-bottom: -15px;
 }
+
+div {
+  width: 555px;
+  margin: 0 auto;
+}
