@@ -1,0 +1,76 @@
+h1 {
+  font-family: 'Brandon Grotesque', serif;
+  color: #eb5d57;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-left: 180px;
+}
+
+label {
+  color: #1c1c1c;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  font-size: smaller;
+  padding: 10px;
+}
+
+.email,
+.location,
+.name {
+  padding: 15px 275px 5px 3px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: #789;
+  margin-top: -15px;
+}
+
+.amount {
+  padding: 10px 310px 10px 4px;
+  border-radius: 6px;
+  color: #444242;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: normal;
+  font-size: medium;
+  background-color: #f3f3f3;
+  margin-top: -2%;
+}
+
+.submit {
+  background-color: #eb5d57;
+  border: solid #eb5d57;
+  border-radius: 14px;
+  border-color: #eb5d57;
+  color: white;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  padding: 3px 15px;
+  margin-left: 333px;
+  font-size: medium;
+}
+
+.submit:active {
+  background-color: #b04643;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #789;
+  font-weight: lighter;
+  opacity: 0.5;
+  font-size: 15px;
+  font-family: 'Atlas Grotesk', sans-serif;
+  padding: 4px 5px 16px 10px;
+}
+
+fieldset {
+  margin: 44px;
+  border-radius: 11px;
+}
+
+.howmany {
+  margin-bottom: -15px;
+}
