@@ -7,13 +7,13 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the **default** value for the `position` property of HTML elements?
   Static
 - How does setting `position: relative` on an element affect document flow?
-  You can modify its final position after it has been positioned in the normal flow
+  It doesnt
 - How does setting `position: relative` on an element affect where it appears on the page?
-  It is moved from it's original relative position
+  It doesnt unless you use offset properties
 - How does setting `position: absolute` on an element affect document flow?
   It "no longer exists" in the normal doccument flow, instead it sits on it's own seperate layer seperate from everything else
 - How does setting `position: absolute` on an element affect where it appears on the page?
-  It is positioned based on the containing elements sides
+  It is positioned based on the parent containiner
 - How do you constrain an absolutely positioned element to a containing block?
   position:
 - What are the four box offset properties?
