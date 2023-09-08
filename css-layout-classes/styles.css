@@ -24,7 +24,7 @@
 }
 
 .column-fourth {
-  display: flex;
+  flex-basis: 25%;
 }
 
 .column-two-third {
