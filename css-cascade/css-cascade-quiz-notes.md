@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What does the term "source order" mean with respect to CSS?
   Order of appearance
 - How is it possible for the styles of an element to be applied to its children as well without an additional CSS rule?
-  class names seperated by commas
+  Class names seperated by commas
 - List the three selector types in order of increasing specificity.
   ID, Class, Type
 - Why is using `!important` considered bad practice?
