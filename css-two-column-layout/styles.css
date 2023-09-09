@@ -1,0 +1,63 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 18px;
+}
+
+.body {
+  color: slategrey;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+.column-one {
+  text-align: center;
+  font-family: Karla, sans-serif;
+}
+
+.content > h2 {
+  color: black;
+  font-family: Karla, sans-serif;
+  font-weight: light;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: start;
+}
+
+.column-fourth {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.content {
+  font-family: Karla, sans-serif;
+  color: slategrey;
+  text-align: start;
+}
+
+.button {
+  margin-top: 20px;
+  margin-left: 20rem;
+  color: #d14c45;
+  background-color: #ffff;
+  font-family: Karla, sans-serif;
+  border-color: #d14c45;
+  border-width: 2px;
+  font-size: 15px;
+  padding: 5px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
