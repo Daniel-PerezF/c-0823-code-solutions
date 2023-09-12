@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+
+  /* background-color: aqua; */
+}
+
+.column-on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fef9f1;
+  height: 100vh;
+}
+
+.column-off {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  height: 100vh;
+}
+
+.button-on {
+  border-radius: 100rem;
+  border: none;
+  padding: 150px;
+  background-color: #faea83;
+  box-shadow: 1px 3px 50px 5px #d7ca7b;
+}
+
+.button-off {
+  border-radius: 100rem;
+  border: none;
+  padding: 150px;
+  background-color: #252525;
+}
