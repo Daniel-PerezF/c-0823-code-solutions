@@ -9,19 +9,19 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What event is fired when a user's cursor leaves a form control?
   Blur
 - What event is fired as a user changes the value of a form control?
-  Change
+  Change/input
 - What event is fired when a user clicks the `"submit"` button within a `<form>`?
-  Click
+  Submit
 - What does the `event.preventDefault()` method do?
   Stops an event from happening as it noramlly would
 - What does submitting a form without `event.preventDefault()` do?
-  Submits the form
+  Submits the form, browser refreshes
 - What property of a form element object contains all of the form's controls.
-  Form property
+  Elements property
 - What property of a form control object gets and sets its value?
-  Name property
+  Value property
 - What is one risk of writing a lot of code without checking to see if it works so far?
-  The program could not be working as intended
+  The program could not be working as intended, bugs in code
 - What is an advantage of having your console open when writing a JavaScript program?
   Checking to see if the program is working as expected/debugging
 
