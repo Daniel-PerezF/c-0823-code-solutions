@@ -5,11 +5,15 @@ function handleClick(event) {
 
   if (counter % 2 === 0) {
     $clickButton.className = 'button-off';
-  } else $clickButton.className = 'button-on';
+  } else {
+    $clickButton.className = 'button-on';
+  }
 
   if (counter % 2 === 0) {
     $column.className = 'column-off';
-  } else $column.className = 'column-on';
+  } else {
+    $column.className = 'column-on';
+  }
 }
 
 const $clickButton = document.querySelector('.button-on');
