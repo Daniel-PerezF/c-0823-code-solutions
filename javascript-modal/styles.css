@@ -19,7 +19,7 @@
   border-radius: 5px;
   padding: 20px 40px;
   box-shadow: 1px 1px 5px 1px #000;
-  position: absolute;
+  position: fixed;
 }
 
 /* Pop Up Styling */
@@ -36,7 +36,8 @@
 }
 
 .pop-up {
-  border: 1px solid red;
+  border: 1px solid white;
+  border-radius: 5px;
   padding: 15px;
   display: flex;
   width: 50vh;
