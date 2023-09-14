@@ -9,13 +9,13 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why is it possible to listen for events on one element that actually happen its descendent elements?
   Event "bubble" from the inner element up through the parent element
 - What DOM element property tells you what type of element it is?
-  event.currentTarget(=this)
+  .tagName
 - What does the `element.closest()` method take as its argument and what does it return?
   Takes a selector as it's argument, returns the closest ancestor element or itself which matches the selector.
 - How can you remove an element from the DOM?
-  .remove()
+  .remove(), remove method
 - If you wanted to insert new clickable DOM elements into the page using JavaScript, how could you avoid adding an event listener to every new element individually?
-  Giving it a different class name than the element with the event listener
+  Event delegation.
 
 ## Notes
 
