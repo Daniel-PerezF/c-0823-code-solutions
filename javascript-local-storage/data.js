@@ -2,8 +2,9 @@
 let todos = [];
 const previousTodosJSON = localStorage.getItem('javascript-local-storage');
 // console.log(previousTodosJSON);
-
-todos = JSON.parse(previousTodosJSON);
+if (previousTodosJSON !== null) {
+  todos = JSON.parse(previousTodosJSON);
+}
 
 window.addEventListener('beforeunload', handleBeforeUnload);
 
