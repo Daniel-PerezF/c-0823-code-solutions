@@ -20,7 +20,7 @@ console.log('bookArray:', bookArray, 'typeOf bookArray:', typeof bookArray);
 const jsonBook = JSON.stringify(bookArray);
 console.log('JSON:', jsonBook, 'typeOf JSON:', typeof jsonBook);
 
-const student = '{"id":"4444","name":"Daniel"}';
+const student = '{"id":4444,"name":"Daniel"}';
 console.log('studentJSON:', student, 'typeofStudentJSON:', typeof student);
 
 const obj = JSON.parse(student);
