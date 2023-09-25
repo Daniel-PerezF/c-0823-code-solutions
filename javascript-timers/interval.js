@@ -6,8 +6,9 @@ function countdownTimer() {
     $countdown.textContent = counter;
     counter--;
   } else {
+    clearInterval(timer);
     $countdown.textContent = '~Earth Beeeelooowww Us~';
   }
 }
 
-setInterval(countdownTimer, 1000);
+const timer = setInterval(countdownTimer, 1000);
