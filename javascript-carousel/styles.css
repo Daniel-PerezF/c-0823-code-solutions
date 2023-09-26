@@ -1,0 +1,85 @@
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: ;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.fa-solid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa-chevron-left {
+  padding-right: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 0.15s ease;
+}
+
+.fa-chevron-left:hover {
+  font-size: 3.2rem;
+  color: #8e785d;
+}
+
+.fa-chevron-left:active {
+  font-size: 3.5rem;
+  color: #8e785d;
+}
+
+.fa-chevron-right {
+  padding-left: 2rem;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 0.15s ease;
+}
+
+.fa-chevron-right:hover {
+  font-size: 3.2rem;
+  color: #8e785d;
+}
+
+.fa-chevron-right:active {
+  font-size: 3.5rem;
+  color: #8e785d;
+}
+
+.fa-circle {
+  padding: 0 0.2rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+#one:hover {
+  color: #5e503f;
+}
+
+#two:hover {
+  color: #5e503f;
+}
+
+#three:hover {
+  color: #5e503f;
+}
+
+#four:hover {
+  color: #5e503f;
+}
+
+#five:hover {
+  color: #5e503f;
+}
