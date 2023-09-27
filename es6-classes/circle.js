@@ -9,7 +9,6 @@ class Circle extends Shape {
   }
 
   describe() {
-    super.describe();
     return `${super.describe()} and the radius is ${this.radius}`;
   }
 }

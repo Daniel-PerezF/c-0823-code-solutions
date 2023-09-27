@@ -8,7 +8,6 @@ class Square extends Shape {
   }
 
   describe() {
-    super.describe();
     return `${super.describe()} and the width is ${this.width}`;
   }
 }
