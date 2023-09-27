@@ -17,7 +17,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why would you want to inherit from another class?
   Mutability, to avoid code duplication
 - How do you add methods and properties to a class?
-  Using prototype
+  Using constructor and define them inside the constructor
 
 ## Notes
 
