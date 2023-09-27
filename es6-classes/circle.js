@@ -2,21 +2,17 @@
 /* exported Circle */
 
 class Circle extends Shape {
-  #radius;
+  // #radius;
   constructor(radius) {
     super(3.14 * radius ** 2, 2 * 3.14 * radius);
-    this.#radius = radius;
+    this.radius = radius;
   }
 
   describe() {
     super.describe();
-    console.log(
-      `The area is ${this.area}, the perimeter is ${
-        this.perimeter
-      }, and the radius is ${this.#radius}`
-    );
+    return `${super.describe()} and the radius is ${this.radius}`;
   }
 }
 
 const newCircle = new Circle(4);
-newCircle.describe();
+console.log(newCircle.describe());
