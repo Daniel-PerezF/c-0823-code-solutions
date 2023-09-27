@@ -9,11 +9,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What does the AJAX acronym stand for?
   Asynchronous JavaScript And XML
 - Which object is built into the browser for making HTTP requests in JavaScript?
-  DOM
+  XMLHttprequest
 - What event is fired by `XMLHttpRequest` objects when they are finished loading the data from the server?
   The load event
 - **Bonus Question**: An `XMLHttpRequest` object has an `addEventListener()` method just like DOM elements. How is it possible that they both share this functionality?
-  Event targets can be elements, or its children, document, and window but it can also be any object that supports events such as XMLHttpRequest
+  They inherited from the prototype chain
 
 ## Notes
 
