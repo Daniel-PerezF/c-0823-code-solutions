@@ -10,7 +10,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - When an arrow function's body is not surrounded in curly braces (_concise body syntax_), what changes in its functionality?
   It cannot return statments only expressions
 - When using _concise body syntax_, how do you return an object literal?
-  You cant
+  Using parenthesis
 - In the expression
   ```js
   foo(() => 42);
@@ -24,7 +24,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - How many arguments are passed to the function `foo`?
     One
   - What type of argument is passed to the function `foo`?
-    A function
+    A callback function
 - In the expression
   ```js
   bar((y) => {
