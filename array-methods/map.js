@@ -5,12 +5,8 @@ const newArr = prices.map((value) => {
 
   obj.price = value;
   obj.salesPrice = value / 2;
-  console.log(obj);
   return obj;
 });
-
-prices[0].toFixed(2);
-console.log(prices);
 
 const priceArr = prices.map((value) => {
   const newArr = '$' + value.toFixed(2);
