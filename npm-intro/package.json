@@ -4,12 +4,15 @@
   "type": "module",
   "main": "server.js",
   "keywords": [],
-  "author": "",
+  "author": "Daniel Perez",
   "license": "ISC",
   "devDependencies": {
-    "jquery": "^3.7.1"
+    "eslint": "^8.51.0"
   },
   "scripts": {
     "hello": "echo Hello, LearningFuze"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }
