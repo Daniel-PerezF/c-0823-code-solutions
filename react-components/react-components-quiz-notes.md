@@ -11,6 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Export the component, Define the function and add Markup.
 
 - How is a component "rendered" (made visible on the browser page)?
+  Import the component and then you use it in your function
 
 ## Notes
 
