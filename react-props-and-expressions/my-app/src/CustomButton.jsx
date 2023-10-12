@@ -1,5 +1,7 @@
-export default function CustomButton({ color }) {
+export default function CustomButton({ color, textContent }) {
   return (
-    <button style={{ backgroundColor: color, color: 'black' }}>Click</button>
+    <button style={{ backgroundColor: color, color: 'black' }}>
+      {textContent}
+    </button>
   );
 }

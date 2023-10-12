@@ -5,6 +5,7 @@ import './App.css';
 import CustomButton from './CustomButton';
 
 function App() {
+  // const [textContent, setCount] = useState(0);
   return (
     <>
       <div>
@@ -17,9 +18,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div>
-        <CustomButton color="red" />
-        <CustomButton color="green" />
-        <CustomButton color="blue" />
+        <CustomButton color="red" textContent="I" />
+        <CustomButton color="green" textContent="Kinda Know" />
+        <CustomButton color="blue" textContent="React" />
       </div>
       <p>
         Edit <code>src/App.jsx</code> and save to test HMR
