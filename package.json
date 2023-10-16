@@ -1,5 +1,5 @@
 {
-  "name": "code-solutions",
+  "name": "c-0823-code-solutions",
   "version": "1.0.0",
   "private": true,
   "description": "Code exercise solutions.",
@@ -23,5 +23,13 @@
     "stylelint": "^15.4.0",
     "stylelint-config-recommended": "^11.0.0",
     "stylelint-config-standard": "^32.0.0"
-  }
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "type": "module",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
