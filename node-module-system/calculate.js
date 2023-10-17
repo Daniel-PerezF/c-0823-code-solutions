@@ -11,7 +11,7 @@ if (isNaN(a)) {
   console.log('Not a number', num);
   process.exit(1);
 }
-if (isNaN(a)) {
+if (isNaN(b)) {
   console.log('Not a number', num2);
   process.exit(1);
 }
