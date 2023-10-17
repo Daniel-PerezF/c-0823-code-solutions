@@ -4,5 +4,5 @@ takeAChance('Daniel')
     console.log(result);
   })
   .catch((error) => {
-    console.error(error);
+    console.error(error.message);
   });
