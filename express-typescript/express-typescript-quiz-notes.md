@@ -11,7 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Fixes all the issues with regular JavaScript.
 
 - What is a convenient way to run an Express server written in TypeScript?
-  ts-node-esm server.ts
+  you can use ts-node-esm server.ts
 
 ## Notes
 
