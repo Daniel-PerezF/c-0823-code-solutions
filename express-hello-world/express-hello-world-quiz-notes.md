@@ -11,7 +11,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   Execute code, make changes to request and response objects, end the request-response cycle, call the next middleware function in the stack
 
 - How do you mount a middleware with an Express application?
-  app.use();
+  you use the app.use();
 
 - Which objects does an Express application pass to your middleware to manage the request/response lifecycle of the server?
   app.use(), app.METHOD()
