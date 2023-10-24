@@ -3,16 +3,16 @@ import { readFile, writeFile } from 'node:fs/promises';
 const app = express();
 app.use(express.json());
 
-// type Note = {
-//   id: number,
-//   content: string
-// }
-// type Data = {
-//   nextId: number,
-//   notes: Record<number, Note>;
-// }
+type Note = {
+  id: number;
+  content: string;
+};
+type Data = {
+  nextId: number;
+  notes: Record<number, Note>;
+};
 
-let data: any;
+let data: Data;
 const saveData = async (data: any) => {
   await writeFile('data.json', JSON.stringify(data, null, 2));
 };
@@ -54,9 +54,9 @@ app.get('/api/notes/:id', async (req, res) => {
   }
 });
 
-const createNote = async (content: any) => {
+const createNote = async (content: string) => {
   const data = await readData();
-  const newNote: object = {
+  const newNote: Note = {
     id: data.nextId,
     content,
   };
@@ -73,7 +73,7 @@ app.post('/api/notes', async (req, res) => {
       res.status(400).json({ error: 'Content field is required' });
       return;
     }
-    createNote(content);
+    await createNote(content);
     res.status(200).json(content);
   } catch (err) {
     console.error(err);
@@ -123,7 +123,7 @@ app.put('/api/notes/:id', (req, res) => {
       res.status(400).json({ error: 'content is a required field' });
       return;
     }
-    if (data.notes[id] === undefined) {
+    if (data.notes[idNum] === undefined) {
       res.status(404).json({ error: `cannot find note with id ${id}` });
       return;
     }
