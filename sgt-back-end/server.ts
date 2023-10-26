@@ -17,7 +17,7 @@ app.get('/api/grades/:gradeId', async (req, res, next) => {
   try {
     const gradeId = Number(req.params.gradeId);
     if (!Number.isInteger(gradeId) || gradeId <= 0) {
-      throw new ClientError(400, '"gradeId" must be a positive integer');
+      throw new ClientError(400, 'gradeId must be a positive integer');
     }
     const sql = `
       select *
@@ -28,7 +28,7 @@ app.get('/api/grades/:gradeId', async (req, res, next) => {
     const result = await db.query(sql, params);
     const grade = result.rows[0];
     if (!grade) {
-      throw new ClientError(404, `Cannot find grade with "gradeId" ${gradeId}`);
+      throw new ClientError(404, `Cannot find grade with gradeId ${gradeId}`);
     }
     res.json(grade);
   } catch (err) {
@@ -43,8 +43,8 @@ app.get('/api/grades', async (req, res, next) => {
         from "grades"
     `;
     const result = await db.query(sql);
-    const grade = result.rows;
-    res.status(200).json(grade);
+    const grades = result.rows;
+    res.status(200).json(grades);
   } catch (err) {
     next(err);
   }
@@ -112,11 +112,11 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     `;
     const params = [gradeId];
     const result = await db.query(sql, params);
-    const grade = result.rows;
+    const grade = result.rows[0];
     if (grade.length === 0) {
       throw new ClientError(404, `grade with ${gradeId} not found`);
     }
-    res.status(204);
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
