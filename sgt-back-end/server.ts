@@ -44,10 +44,7 @@ app.get('/api/grades', async (req, res, next) => {
     `;
     const result = await db.query(sql);
     const grade = result.rows;
-    if (!grade) {
-      throw new ClientError(400, `Cannot find grades`);
-    }
-    res.status(201).json(grade);
+    res.status(200).json(grade);
   } catch (err) {
     next(err);
   }
@@ -56,6 +53,9 @@ app.get('/api/grades', async (req, res, next) => {
 app.post('/api/grades', async (req, res, next) => {
   try {
     const { name, course, score } = req.body;
+    if (!name || !course || !score) {
+      throw new ClientError(400, `Name, course, score are requried fields`);
+    }
     const sql = `
       insert into "grades" ("name", "course", "score")
         values($1, $2, $3)
@@ -63,10 +63,7 @@ app.post('/api/grades', async (req, res, next) => {
     `;
     const params = [name, course, score];
     const result = await db.query(sql, params);
-    const grade = result.rows;
-    if (!name || !course || !score) {
-      throw new ClientError(400, `Name, course, score are requried fields`);
-    }
+    const grade = result.rows[0];
     res.status(201).json(grade);
   } catch (err) {
     next(err);
@@ -90,11 +87,11 @@ app.put('/api/grades/:gradeId', async (req, res, next) => {
     `;
     const params = [name, course, score, gradeId];
     const result = await db.query(sql, params);
-    const grade = result.rows;
+    const grade = result.rows[0];
     if (!name || !course || !score) {
       throw new ClientError(404, `Name, course, score are required fields`);
     }
-    res.json(grade);
+    res.status(200).json(grade);
   } catch (err) {
     next(err);
   }
@@ -116,10 +113,10 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     const params = [gradeId];
     const result = await db.query(sql, params);
     const grade = result.rows;
-    if (!gradeId) {
-      throw new ClientError(404, `gradeId is a required field`);
+    if (grade.length === 0) {
+      throw new ClientError(404, `grade with ${gradeId} not found`);
     }
-    res.status(204).json(grade);
+    res.status(204);
   } catch (err) {
     next(err);
   }
