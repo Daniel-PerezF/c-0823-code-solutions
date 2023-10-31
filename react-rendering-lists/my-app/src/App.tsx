@@ -10,11 +10,9 @@ const pokedex = [
 ];
 function App() {
   return (
-    <>
-      <div>
-        <PokemonList pokedex={pokedex} />
-      </div>
-    </>
+    <div>
+      <PokemonList pokedex={pokedex} />
+    </div>
   );
 }
 
