@@ -14,7 +14,7 @@ export function StopWatch() {
     } else {
       const timer = setInterval(() => {
         setCount((prev) => prev + 1);
-      }, 500);
+      }, 1000);
       setActiveIntervalId(timer);
     }
   }
