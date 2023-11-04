@@ -1,0 +1,41 @@
+:root {
+  background-color: #ababa1;
+}
+
+.arrow {
+  font-size: 3.3rem;
+  height: 100vh;
+  display: flex;
+  stroke: #fff;
+  cursor: pointer;
+  transition: font-size 200ms ease-in-out;
+}
+
+.arrow:hover {
+  font-size: 4rem;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.right {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 15.2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  max-height: 1000px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
