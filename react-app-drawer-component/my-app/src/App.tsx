@@ -23,11 +23,10 @@ const items = [
     title: 'Breath of the Wild',
   },
 ];
-console.log(items);
 function App() {
   return (
     <>
-      <AppDrawer items={items} />
+      <AppDrawer items={items} onSelect={() => {}} />
     </>
   );
 }

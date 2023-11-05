@@ -6,8 +6,11 @@ export function AppDrawer({ items }: Props) {
 
   function handleMenuClick() {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   }
+  function handleSelect() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       <div className="image">
@@ -15,7 +18,7 @@ export function AppDrawer({ items }: Props) {
           <FaBars className={'menu-icon'} />
         </div>
         <div className={isOpen ? 'menu-drawer is-open' : 'menu-drawer'}>
-          <Menu items={items} />
+          <Menu items={items} onSelect={handleSelect} />
         </div>
         <div
           onClick={handleMenuClick}
@@ -31,15 +34,18 @@ type Topic = {
 };
 type Props = {
   items: Topic[];
+  onSelect: (item: string) => void;
 };
 
-function Menu({ items }: Props) {
+function Menu({ items, onSelect }: Props) {
   return (
     <>
       <h3 className="menu-heading">Menu</h3>
       {items.map((item) => (
         <div className="menu-items" key={item.id}>
-          <div className="menu-item">{item.title}</div>
+          <div onClick={() => onSelect(item.title)} className="menu-item">
+            {item.title}
+          </div>
         </div>
       ))}
     </>
