@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <Carousel imageUrl={images} />
+        <div className="carousel-container">
+          <Carousel imageUrl={images} images={images} />
+        </div>
       </div>
     </>
   );
