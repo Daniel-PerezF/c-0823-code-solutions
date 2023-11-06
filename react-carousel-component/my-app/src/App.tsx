@@ -11,13 +11,11 @@ const images = [
 
 function App() {
   return (
-    <>
-      <div className="container">
-        <div className="carousel-container">
-          <Carousel imageUrl={images} images={images} />
-        </div>
+    <div className="container">
+      <div className="carousel-container">
+        <Carousel images={images} />
       </div>
-    </>
+    </div>
   );
 }
 

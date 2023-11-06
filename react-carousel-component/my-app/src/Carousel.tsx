@@ -3,10 +3,9 @@ import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 import { FaCircle } from 'react-icons/fa';
 
 type CarouselProps = {
-  imageUrl: string[];
   images: string[];
 };
-export function Carousel({ imageUrl, images }: CarouselProps) {
+export function Carousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -49,27 +48,25 @@ export function Carousel({ imageUrl, images }: CarouselProps) {
   }
 
   return (
-    <>
+    <div>
+      <LuChevronLeft onClick={handleLeftClick} className="arrow left" />
       <div>
-        <LuChevronLeft onClick={handleLeftClick} className="arrow left" />
-        <div>
-          <img src={imageUrl[currentIndex]} />
-          <div className="circle-container">
-            {images.map((image, index) => (
-              <div key={image}>
-                <FaCircle
-                  style={{
-                    cursor: 'pointer',
-                    fill: currentIndex === index ? 'black' : 'white',
-                  }}
-                  onClick={() => handleCircleClick(index)}
-                />
-              </div>
-            ))}
-          </div>
+        <img src={images[currentIndex]} />
+        <div className="circle-container">
+          {images.map((image, index) => (
+            <div key={image}>
+              <FaCircle
+                style={{
+                  cursor: 'pointer',
+                  fill: currentIndex === index ? 'black' : 'white',
+                }}
+                onClick={() => handleCircleClick(index)}
+              />
+            </div>
+          ))}
         </div>
-        <LuChevronRight onClick={handleRightClick} className="arrow right" />
       </div>
-    </>
+      <LuChevronRight onClick={handleRightClick} className="arrow right" />
+    </div>
   );
 }
