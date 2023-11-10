@@ -1,0 +1,45 @@
+# unit-tests-jest-quiz-notes
+
+## Quiz Questions
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What are unit tests?
+  Testing a unit, the smallest piece of code that can be logically isolated in a system.
+
+- Why is it important to write unit tests?
+  It gives you a better view of how your code is running.
+
+- What code should be tested with a unit test? What code is not well suited for unit tests?
+  Code that only relies on itself, simple funcitons etc. Code that rely on external systems.
+
+- What is Jest? What are some other popular JavaScript unit testing frameworks?
+  A JavaScript testing framework. Mocha.js, Karma
+
+## Notes
+
+All student notes should be written here.
+
+How to write `Code Examples` in markdown
+
+for JS:
+
+```js
+const data = 'Howdy';
+```
+
+for HTML:
+
+```html
+<div>
+  <p>This is text content</p>
+</div>
+```
+
+for CSS:
+
+```css
+div {
+  width: 100%;
+}
+```
